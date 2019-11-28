@@ -4,6 +4,28 @@
 
 .title{}
 
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
 .selectAdalaber{
+  width: 60%;
+}
+
+.button{
+  background-color: palegreen;
   width: 30%;
+  height: 30px;
+  margin-bottom: 10%;
+}
+
+
+/*CARD*/
+.containerCard{
+  background-color: paleturquoise;
+  height: 400px;
+  width: 60%;
+  margin: auto;
+  margin-top: 6%;
 }

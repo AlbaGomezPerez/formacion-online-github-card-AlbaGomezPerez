@@ -24,20 +24,34 @@ class App extends React.Component {
      GetAdalabers()
         .then(data => {
             this.setState({
-               AllAdalabers : data.results
+               AllAdalabers : data
          });
       });
     }
 
-    render() {
+
+        render() {
         const {AllAdalabers} = this.state;
         return (
             <React.Fragment>
                 <h1>hola</h1>
+                <div className="container">
+                    <button className="button">Click me</button>
+                    <AdalabersSelectOptions
+                        AllAdalabers = {AllAdalabers}
+                    />
+                </div>
+                <div className="containerCard">
+                    <div className="profileImage">image</div>
+                    <p className="profileLogin">login</p>
+                    <p className="profileName">name</p>
+                    <p className="profileLocalitation">localitation</p>
+                    <p className="profileFollowers">followers</p>
+                    <p className="profileFollowing">Following</p>
 
-                <AdalabersSelectOptions
-                    AllAdalabers = {AllAdalabers}
-                />
+                </div>
+
+
             </React.Fragment>
 
 

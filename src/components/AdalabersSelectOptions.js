@@ -2,12 +2,16 @@ import React from 'react';
 const AdalabersSelectOptions = props => {
     const {AllAdalabers} = props;
     return (
-        <select name="adalaberSelect">
+        <select className="selectAdalaber">
             {AllAdalabers.map((item, index) => {
+
                 return (
-                    <option value={item.name}>{item.name}</option>
+                   <option className="optionSelectAdalaber" value={item.id} key={index}>{item.login}</option>
+
                 )
-            })}
+
+            }
+            )}
         </select>
     );
 }
