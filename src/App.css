@@ -29,3 +29,7 @@
   margin: auto;
   margin-top: 6%;
 }
+
+.profileImage{
+  background-size: cover;
+}

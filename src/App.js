@@ -1,7 +1,8 @@
 import React from 'react';
 import {GetAdalabers} from './services/GetAdalabers';
-import './App.css';
 import AdalabersSelectOptions from "./components/AdalabersSelectOptions";
+import AdalaberCard from "./components/AdalaberCard";
+import './App.css';
 
 
 
@@ -40,18 +41,10 @@ class App extends React.Component {
                     <AdalabersSelectOptions
                         AllAdalabers = {AllAdalabers}
                     />
+                    <AdalaberCard
+                        AllAdalabers = {AllAdalabers}
+                    />
                 </div>
-                <div className="containerCard">
-                    <div className="profileImage">image</div>
-                    <p className="profileLogin">login</p>
-                    <p className="profileName">name</p>
-                    <p className="profileLocalitation">localitation</p>
-                    <p className="profileFollowers">followers</p>
-                    <p className="profileFollowing">Following</p>
-
-                </div>
-
-
             </React.Fragment>
 
 
@@ -63,13 +56,6 @@ class App extends React.Component {
 
 }
 
-// {AllAdalabers
-//     .map(item =>{
-//         return(
-//             console.log(item);
-//         )
-//     })
-// }
 export default App;
 
 

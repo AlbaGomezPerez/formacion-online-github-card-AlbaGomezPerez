@@ -7,7 +7,6 @@ const AdalabersSelectOptions = props => {
 
                 return (
                    <option className="optionSelectAdalaber" value={item.id} key={index}>{item.login}</option>
-
                 )
 
             }
