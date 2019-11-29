@@ -32,5 +32,6 @@
 
 .profileImage{
   background-size: cover;
-  width: 90%;
+  width: 70%;
+  border-radius: 50%;
 }

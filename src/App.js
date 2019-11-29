@@ -12,8 +12,10 @@ class App extends React.Component {
 
         this.state = {
             AllAdalabers: [],
-            SearchName: ''
+            SelectAdalaber: ''
         };
+
+        this.getAdalaberOption = this.getAdalaberOption.bind(this);
     }
 
     componentDidMount() {
@@ -30,9 +32,18 @@ class App extends React.Component {
       });
     }
 
+    //Select event
+    getAdalaberOption(event) {
+        const SelectAdalaber = event.currentTarget.id;
+        this.setState({
+            SelectAdalaber: SelectAdalaber
+        });
+
+    }
+
 
         render() {
-        const {AllAdalabers} = this.state;
+        const {AllAdalabers, SelectAdalaber} = this.state;
         return (
             <React.Fragment>
                 <h1>hola</h1>
