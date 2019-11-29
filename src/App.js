@@ -1,5 +1,6 @@
 import React from 'react';
 import {GetAdalabers} from './services/GetAdalabers';
+// import {GetDetailInfo} from './services/GetAdalabers';
 import AdalabersSelectOptions from "./components/AdalabersSelectOptions";
 import AdalaberCard from "./components/AdalaberCard";
 import './App.css';
@@ -34,11 +35,18 @@ class App extends React.Component {
 
     //Select event
     getAdalaberOption(event) {
-        const SelectAdalaber = event.currentTarget.id;
-        this.setState({
-            SelectAdalaber: SelectAdalaber
-        });
+        const SelectAdalaber = event.currentTarget.value;
+        console.log(event.currentTarget.value);
+        const url2 = "https://api.github.com/users/";
 
+        fetch(url2 + SelectAdalaber)
+            .then(response => response.json())
+            .then(info => {
+                this.setState({
+                    SelectAdalaber: SelectAdalaber
+                });
+            })
+        console.log(url2 + SelectAdalaber);
     }
 
 
@@ -51,9 +59,13 @@ class App extends React.Component {
                     <button className="button">Click me</button>
                     <AdalabersSelectOptions
                         AllAdalabers = {AllAdalabers}
+                        getAdalaberOption={this.getAdalaberOption}
+                        SelectAdalaber = {SelectAdalaber}
                     />
                     <AdalaberCard
                         AllAdalabers = {AllAdalabers}
+                        getAdalaberOption={this.getAdalaberOption}
+                        SelectAdalaber = {SelectAdalaber}
                     />
                 </div>
             </React.Fragment>
