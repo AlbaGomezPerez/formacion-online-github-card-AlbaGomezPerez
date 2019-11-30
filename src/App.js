@@ -55,7 +55,8 @@ class App extends React.Component {
         const {AllAdalabers, SelectAdalaber} = this.state;
         return (
             <React.Fragment>
-                <h1>hola</h1>
+                <div className="App">
+                <h1 className="title">hola</h1>
                 <div className="container">
                     <AdalabersSelectOptions
                         AllAdalabers = {AllAdalabers}
@@ -63,19 +64,10 @@ class App extends React.Component {
                         SelectAdalaber = {SelectAdalaber}
                     />
                     <AdalaberCard
-                        AllAdalabers = {AllAdalabers}
                         getAdalaberOption={this.getAdalaberOption}
                         SelectAdalaber = {SelectAdalaber}
                     />
-                    {/*<div>*/}
-                    {/*    <img src={SelectAdalaber.avatar_url}></img>*/}
-                    {/*    <p>{SelectAdalaber.location}</p>*/}
-                    {/*    <p>{SelectAdalaber.login}</p>*/}
-                    {/*    <p>{SelectAdalaber.name}</p>*/}
-                    {/*    <p>{SelectAdalaber.login}</p>*/}
-                    {/*    <p>{SelectAdalaber.followers}</p>*/}
-                    {/*    <p>{SelectAdalaber.following}</p>*/}
-                    {/*</div>*/}
+                </div>
                 </div>
             </React.Fragment>
         );

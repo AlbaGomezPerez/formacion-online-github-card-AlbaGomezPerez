@@ -1,8 +1,22 @@
 .App {
   text-align: center;
+  background-image: url("./images/background.jpg");
+  height: 100vh;
+  background-size: cover;
+  padding-top: 2%;
 }
 
-.title{}
+.title{
+  background-image: url("./images/adalab.png");
+  width: 300px;
+  height: 1px;
+  margin: auto;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 10%;
+  color: red;
+}
 
 
 .container{
@@ -11,27 +25,61 @@
 }
 .selectAdalaber{
   width: 60%;
+  height: 40px;
+  margin: auto;
+  font-size: 20px;
+  margin-bottom: 8%;
 }
 
-.button{
-  background-color: palegreen;
-  width: 30%;
-  height: 30px;
-  margin-bottom: 10%;
+.optionSelectAdalaber{
 }
+
 
 
 /*CARD*/
-.containerCard{
-  background-color: paleturquoise;
+.cardContainer{
+  /*display: this.state.SelectAdalaber; 'block' : 'none';*/
   height: 400px;
-  width: 60%;
+  width: 30%;
   margin: auto;
-  margin-top: 6%;
+  background-color: #e6e0e0;
+  border-radius: 10%;
 }
 
 .profileImage{
   background-size: cover;
-  width: 70%;
+  width: 50%;
   border-radius: 50%;
+  position: relative;
+  top: -25%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.DetailContainer{
+  position: relative;
+  top: -20%;
+}
+
+/*.profileLocation:before{*/
+/*  content: "\f7a2";*/
+/*  font-family: "Font Awesome 5 Pro";*/
+/*  color: white;*/
+/*  font-size: 18px;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  padding-top: 6%;*/
+/*  padding-bottom: 6%;*/
+/*}*/
+
+.followContainer{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 20%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
