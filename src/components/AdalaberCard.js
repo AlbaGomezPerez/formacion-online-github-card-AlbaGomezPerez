@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 const AdalaberCard = props => {
@@ -19,4 +20,9 @@ const AdalaberCard = props => {
     );
 }
 
+AdalaberCard.propTypes = {
+    SelectAdalaber: PropTypes.object
+};
+
 export default AdalaberCard;
+
