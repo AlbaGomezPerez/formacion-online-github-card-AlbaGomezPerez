@@ -13,13 +13,14 @@ class App extends React.Component {
 
         this.state = {
             AllAdalabers: [],
-            SelectAdalaber: ''
+            SelectAdalaber:''
         };
 
         this.getAdalaberOption = this.getAdalaberOption.bind(this);
     }
 
     componentDidMount() {
+        console.log('funciono');
         this.getStudents();
     }
 
@@ -43,9 +44,9 @@ class App extends React.Component {
             .then(response => response.json())
             .then(info => {
                 this.setState({
-                    SelectAdalaber: SelectAdalaber
+                    SelectAdalaber: info
                 });
-            })
+            });
         console.log(url2 + SelectAdalaber);
     }
 
@@ -56,23 +57,27 @@ class App extends React.Component {
             <React.Fragment>
                 <h1>hola</h1>
                 <div className="container">
-                    <button className="button">Click me</button>
                     <AdalabersSelectOptions
                         AllAdalabers = {AllAdalabers}
                         getAdalaberOption={this.getAdalaberOption}
                         SelectAdalaber = {SelectAdalaber}
                     />
-                    <AdalaberCard
-                        AllAdalabers = {AllAdalabers}
-                        getAdalaberOption={this.getAdalaberOption}
-                        SelectAdalaber = {SelectAdalaber}
-                    />
+                    {/*<AdalaberCard*/}
+                    {/*    AllAdalabers = {AllAdalabers}*/}
+                    {/*    getAdalaberOption={this.getAdalaberOption}*/}
+                    {/*    SelectAdalaber = {SelectAdalaber}*/}
+                    {/*/>*/}
+                    <div>
+                        <img src={SelectAdalaber.avatar_url}></img>
+                        <p>{SelectAdalaber.location}</p>
+                        <p>{SelectAdalaber.login}</p>
+                        <p>{SelectAdalaber.name}</p>
+                        <p>{SelectAdalaber.login}</p>
+                        <p>{SelectAdalaber.followers}</p>
+                        <p>{SelectAdalaber.following}</p>
+                    </div>
                 </div>
             </React.Fragment>
-
-
-
-
         );
 
     };
@@ -80,6 +85,7 @@ class App extends React.Component {
 }
 
 export default App;
+
 
 
 
