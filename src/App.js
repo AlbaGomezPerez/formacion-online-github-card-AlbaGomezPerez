@@ -62,20 +62,20 @@ class App extends React.Component {
                         getAdalaberOption={this.getAdalaberOption}
                         SelectAdalaber = {SelectAdalaber}
                     />
-                    {/*<AdalaberCard*/}
-                    {/*    AllAdalabers = {AllAdalabers}*/}
-                    {/*    getAdalaberOption={this.getAdalaberOption}*/}
-                    {/*    SelectAdalaber = {SelectAdalaber}*/}
-                    {/*/>*/}
-                    <div>
-                        <img src={SelectAdalaber.avatar_url}></img>
-                        <p>{SelectAdalaber.location}</p>
-                        <p>{SelectAdalaber.login}</p>
-                        <p>{SelectAdalaber.name}</p>
-                        <p>{SelectAdalaber.login}</p>
-                        <p>{SelectAdalaber.followers}</p>
-                        <p>{SelectAdalaber.following}</p>
-                    </div>
+                    <AdalaberCard
+                        AllAdalabers = {AllAdalabers}
+                        getAdalaberOption={this.getAdalaberOption}
+                        SelectAdalaber = {SelectAdalaber}
+                    />
+                    {/*<div>*/}
+                    {/*    <img src={SelectAdalaber.avatar_url}></img>*/}
+                    {/*    <p>{SelectAdalaber.location}</p>*/}
+                    {/*    <p>{SelectAdalaber.login}</p>*/}
+                    {/*    <p>{SelectAdalaber.name}</p>*/}
+                    {/*    <p>{SelectAdalaber.login}</p>*/}
+                    {/*    <p>{SelectAdalaber.followers}</p>*/}
+                    {/*    <p>{SelectAdalaber.following}</p>*/}
+                    {/*</div>*/}
                 </div>
             </React.Fragment>
         );
