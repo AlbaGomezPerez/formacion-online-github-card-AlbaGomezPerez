@@ -53,6 +53,13 @@ class App extends React.Component {
 
         render() {
         const {AllAdalabers, SelectAdalaber} = this.state;
+        let space;
+            if (SelectAdalaber) {
+                space = <AdalaberCard
+                    getAdalaberOption={this.getAdalaberOption}
+                    SelectAdalaber={SelectAdalaber}
+                />;
+            }
         return (
             <React.Fragment>
                 <div className="App">
@@ -63,11 +70,8 @@ class App extends React.Component {
                         getAdalaberOption={this.getAdalaberOption}
                         SelectAdalaber = {SelectAdalaber}
                     />
-                    <AdalaberCard
-                        getAdalaberOption={this.getAdalaberOption}
-                        SelectAdalaber = {SelectAdalaber}
-                    />
                 </div>
+                    {space}
                 </div>
             </React.Fragment>
         );
