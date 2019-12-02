@@ -1,6 +1,5 @@
 import React from 'react';
 import {GetAdalabers} from './services/GetAdalabers';
-// import {GetDetailInfo} from './services/GetAdalabers';
 import AdalabersSelectOptions from "./components/AdalabersSelectOptions";
 import AdalaberCard from "./components/AdalaberCard";
 import './App.css';
@@ -20,7 +19,6 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        console.log('funciono');
         this.getStudents();
     }
 
@@ -47,7 +45,6 @@ class App extends React.Component {
                     SelectAdalaber: info
                 });
             });
-        console.log(url2 + SelectAdalaber);
     }
 
 
@@ -75,9 +72,7 @@ class App extends React.Component {
                 </div>
             </React.Fragment>
         );
-
     };
-
 }
 
 export default App;

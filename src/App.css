@@ -18,11 +18,11 @@
   color: red;
 }
 
-
 .container{
   display: flex;
   flex-direction: column;
 }
+
 .selectAdalaber{
   width: 60%;
   height: 40px;
@@ -34,14 +34,9 @@
   color: white;
 }
 
-.optionSelectAdalaber{
-}
-
-
 
 /*CARD*/
 .cardContainer{
-  /*display: this.state.SelectAdalaber; 'block' : 'none';*/
   height: 400px;
   width: 30%;
   margin: auto;
