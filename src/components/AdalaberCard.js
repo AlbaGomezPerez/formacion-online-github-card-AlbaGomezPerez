@@ -8,13 +8,16 @@ const AdalaberCard = props => {
         <div className="cardContainer">
             <img className="profileImage" src={SelectAdalaber.avatar_url}></img>
             <div className="DetailContainer">
-                <p className="profileLocation">{SelectAdalaber.location}</p>
+                <p className="profileName">{SelectAdalaber.name}</p>
                 <p>@{SelectAdalaber.login}</p>
-                <p>{SelectAdalaber.name}</p>
+                <p className="profileLocation">{SelectAdalaber.location}</p>
+
+
             </div>
             <div className="followContainer">
-                <p>{SelectAdalaber.followers}</p>
-                <p>{SelectAdalaber.following}</p>
+                <p className="profileRepos">{SelectAdalaber.public_repos}</p>
+                <p className="profileFollowers">Followers {SelectAdalaber.followers}</p>
+                <p className="profileFollowing">Following {SelectAdalaber.following}</p>
             </div>
         </div>
     );

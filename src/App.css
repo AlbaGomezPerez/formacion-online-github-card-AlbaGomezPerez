@@ -29,6 +29,9 @@
   margin: auto;
   font-size: 20px;
   margin-bottom: 8%;
+  background-color: #8f6479;
+  border: 2px solid #ccc0c1;
+  color: white;
 }
 
 .optionSelectAdalaber{
@@ -62,24 +65,40 @@
 .DetailContainer{
   position: relative;
   top: -20%;
+  font-size: 22px;
 }
 
-/*.profileLocation:before{*/
-/*  content: "\f7a2";*/
-/*  font-family: "Font Awesome 5 Pro";*/
-/*  color: white;*/
-/*  font-size: 18px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  padding-top: 6%;*/
-/*  padding-bottom: 6%;*/
-/*}*/
+.profileName{
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #451214;
+}
+
 
 .followContainer{
   display: flex;
   justify-content: space-between;
   position: relative;
   bottom: 20%;
-  margin-right: 10%;
-  margin-left: 10%;
+  background-color: #ccc0c1;
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.profileFollowing{
+  width: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.profileFollowers{
+  width: 10px;
+  display: flex;
+  justify-content: center;
 }
