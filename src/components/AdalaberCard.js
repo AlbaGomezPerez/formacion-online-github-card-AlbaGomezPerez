@@ -15,7 +15,7 @@ const AdalaberCard = props => {
 
             </div>
             <div className="followContainer">
-                <p className="profileRepos">{SelectAdalaber.public_repos}</p>
+                <p className="profileRepos">Repos {SelectAdalaber.public_repos}</p>
                 <p className="profileFollowers">Followers {SelectAdalaber.followers}</p>
                 <p className="profileFollowing">Following {SelectAdalaber.following}</p>
             </div>

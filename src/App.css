@@ -86,6 +86,12 @@
   padding-right: 10%;
 }
 
+.profileRepos{
+  width: 10px;
+  display: flex;
+  justify-content: center;
+}
+
 .profileFollowing{
   width: 10px;
   display: flex;
